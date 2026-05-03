@@ -1,6 +1,6 @@
-# Evidencia de la sesión 4 - CSS: Tipografía, color y unidades
+# Evidencia de la sesión 3 - CSS: Modelo de caja y selectores
 
-Esta es la evidencia de la cuarta sesión de Frontend donde se pone en práctica el uso de unidades de medida relativas y los modelos para tipografías y colores.
+Esta es la evidencia de la tercera sesión de Frontend donde se pone en práctica un maquetado de HTML5 y aplicarle estilos CSS
 
 ## Datos del aprendiz
 
