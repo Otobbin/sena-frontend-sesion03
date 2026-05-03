@@ -6,53 +6,55 @@
   margin: 0;
   padding: 0;
 }
-
+:root {
+  /* -- Colores -- */
+  --color-fondo: #f1f5f9;
+  --color-texto: #1e293b;
+  /* -- Tipografía -- */
+  --texto-base: 1rem;
+}
 /* ── Cuerpo ── */
 body {
   font-family: "Segoe UI", system-ui, sans-serif;
-  background-color: #f1f5f9;
-  color: #1e293b;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
   min-height: 100vh;
   padding: 20px 16px; /* padding del body = margen de la página */
 }
-
 /* ── Contenedor raíz ── */
 .app {
   max-width: 1200px;
   margin: 0 auto; /* centrar con margin automático */
 }
-
 /* ── Header ── */
 .panel-header {
   display: flex;
   align-items: baseline;
   gap: 12px;
   padding: 20px 24px; /* relleno interior */
-  background: white;
+  background: var(--color-fondo);
   border-radius: 12px;
-  border-left: 5px solid #0f172a; /* borde solo izquierdo */
+  border-left: 5px solid var(--color-texto); /* borde solo izquierdo */
   margin-bottom: 24px; /* margen exterior inferior */
 }
 .panel-titulo {
   font-size: 1.5rem;
   font-weight: 800;
-  color: #0f172a;
+  color: var(--color-texto);
 }
 .panel-subtitulo {
   font-size: 0.875rem;
-  color: #64748b;
+  color: var(--color-texto);
 }
-
 /* ── Tablero — una columna en móvil ── */
 .panel-tablero {
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
 }
-
 /* ── Columna Kanban ── */
 .columna-kanban {
-  background: white;
+  background: var(--color-fondo);
   border-radius: 12px;
   padding: 16px; /* relleno interior */
   border: 1px solid #e2e8f0;
@@ -62,7 +64,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 12px;
-  border-bottom: 2px solid #f1f5f9;
+  border-bottom: 2px solid var(--color-fondo);
   margin-bottom: 12px;
 }
 .columna-titulo {
@@ -72,9 +74,9 @@ body {
   color: #475569;
 }
 .columna-contador {
-  font-size: 0.8rem;
+  font-size: var(--texto-base);
   font-weight: 700;
-  background: #f1f5f9;
+  background: var(--color-fondo);
   color: #64748b;
   padding: 2px 8px;
   border-radius: 20px;
@@ -84,11 +86,10 @@ body {
   flex-direction: column;
   gap: 10px;
 }
-
 /* ── Tarjeta de tarea ── */
 .tarjeta-tarea {
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
+  background: var(--color-fondo);
+  border: 1px solid var(--color-fondo);
   border-radius: 8px;
   padding: 12px 14px; /* padding = espacio interior de la tarjeta */
   display: flex;
@@ -100,14 +101,14 @@ body {
   font-size: 0.7rem;
   font-weight: 700;
   color: #64748b;
-  background: #e2e8f0;
+  background: var(--color-fondo);
   padding: 2px 8px;
   border-radius: 20px;
 }
 .tarea-titulo {
-  font-size: 0.9rem;
+  font-size: var(--texto-base);
   font-weight: 600;
-  color: #1e293b;
+  color: var(--color-texto);
 }
 .tarea-desc {
   font-size: 0.8rem;
@@ -126,7 +127,7 @@ body {
   font-weight: 700;
   padding: 2px 8px;
   border-radius: 20px;
-  color: white;
+  color: var(--color-fondo);
 }
 .tarea-prioridad--alta {
   background: #dc2626;
@@ -160,14 +161,14 @@ body {
 }
 button {
   display: inline-block;
-  font-size: 1rem;
+  font-size: var(--texto-base);
   font-weight: 550;
   padding: 2px 8px;
   border-radius: 15px;
   color: rgb(255, 0, 0);
-  background-color: #f1f5f9;
+  background-color: var(--color-fondo);
 }
 button:hover {
-  color: #f1f5f9;
+  color: var(--color-fondo);
   background-color: rgb(255, 0, 0);
 }
